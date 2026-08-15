@@ -1,0 +1,4 @@
+asset,file,rows_clean,first_timestamp,last_timestamp,invalid_timestamp_rows,duplicate_timestamp_rows_before_dedup,missing_ohlc_rows_before_drop,nonpositive_ohlc_rows,high_invariant_violations,low_invariant_violations,gaps_gt_1h,intervals_lt_1h,one_hour_interval_pct,most_common_interval,max_gap
+BTC,btc_data_bybit_perp_1h.csv,56025,2020-03-25 10:00:00,2026-08-15 18:00:00,0,0,0,0,0,0,0,0,100.0,0 days 01:00:00,0 days 01:00:00
+ETH,eth_data_bybit_perp_1h.csv,47516,2021-03-15 00:00:00,2026-08-15 19:00:00,0,0,0,0,0,0,0,0,100.0,0 days 01:00:00,0 days 01:00:00
+SOL,sol_data_bybit_perp_1h.csv,42380,2021-10-15 00:00:00,2026-08-15 19:00:00,0,0,0,0,0,0,0,0,100.0,0 days 01:00:00,0 days 01:00:00

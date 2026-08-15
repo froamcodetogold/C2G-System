@@ -1,0 +1,51 @@
+C2G SYSTEM - RESEARCH CLONE
+===========================
+
+Clone:
+C2GSystem_Clone
+
+Criado:
+2026-08-15 20:28:13
+
+Projeto original:
+C:\Users\User\Desktop\C2G System
+
+REGRA ABSOLUTA
+--------------
+
+O projeto original C2G System é somente leitura durante
+os experimentos da nova geração.
+
+Todos os experimentos devem acontecer exclusivamente em:
+
+C:\Users\User\Desktop\C2GSystem_Clone
+
+As versões forward existentes devem permanecer preservadas.
+
+V1.14:
+BTC True Forward
+
+V1.17:
+BTC / ETH / SOL Multi-Asset True Forward
+
+Qualquer alteração experimental deverá ser criada como
+nova pesquisa dentro de:
+
+research_v2/
+
+OBJETIVO:
+
+Build.
+Test.
+Fail.
+Learn.
+Improve.
+
+Nunca otimizar retrospectivamente uma estratégia apenas
+para melhorar o resultado histórico.
+
+Separar sempre:
+
+IN-SAMPLE
+OUT-OF-SAMPLE
+FORWARD

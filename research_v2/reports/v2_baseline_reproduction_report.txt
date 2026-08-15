@@ -1,0 +1,10 @@
+C2G V2 - BASELINE REPRODUCTION REPORT
+
+Root: C:\Users\User\Desktop\C2GSystem_Clone
+Common period: 2021-10-15 00:00:00 -> 2026-08-15 18:00:00
+Verdict: PASS
+
+Important:
+- This is historical reproduction, not new OOS evidence.
+- No parameter was optimized.
+- TradeSharpeLike is NOT an annualized calendar Sharpe.
