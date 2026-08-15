@@ -1,0 +1,46 @@
+C2G SYSTEM PRO - V1.17 MULTI-ASSET FORWARD MANIFEST
+
+FREEZE UTC
+2026-08-15 20:00:00
+
+ASSETS
+BTC/USDT Perpetual - Bybit
+ETH/USDT Perpetual - Bybit
+SOL/USDT Perpetual - Bybit
+
+FROZEN RULE
+BUY ONLY
+Supertrend 10 / 3.0
+ADX(14) > 25
+ADX current > ADX previous candle
+Bull regime:
+- Close > EMA200
+- EMA200 current > EMA200 50 candles ago
+
+ENTRY
+Next candle OPEN after confirmed signal.
+
+EXIT
+CLOSE after 24 x 1H candles.
+
+DISABLED
+SELL
+Stop Loss
+Take Profit
+
+COST STRESS
+Fee per side: 0.055%
+Slippage per side: 0.020%
+
+RESEARCH CONSTRAINT
+No parameter changes while collecting the forward sample.
+Any change requires a new version and a new freeze timestamp.
+
+NOTE
+BTC/ETH/SOL were selected after V1.15 showed positive historical
+results. Therefore only trades after this freeze timestamp should
+be treated as the new forward evidence for this multi-asset set.
+
+PAPER TEST ONLY.
+No exchange orders are sent.
+Funding is not included.
