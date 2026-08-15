@@ -1,0 +1,4 @@
+market_a,market_b,signals_a,signals_b,matched_1h,coverage_pct
+BINANCE,BYBIT,25,24,20,80.0
+BINANCE,OKX,25,26,22,84.61538461538461
+BYBIT,OKX,24,26,19,73.07692307692307

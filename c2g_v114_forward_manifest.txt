@@ -1,0 +1,37 @@
+C2G SYSTEM PRO - V1.14 TRUE FORWARD PAPER TEST
+
+FREEZE TIMESTAMP (UTC)
+2026-08-15 19:00:00
+
+RULE
+BUY ONLY
+Supertrend: 10 / 3.0
+ADX length: 14
+ADX minimum: > 25
+ADX Rising: current ADX > previous candle ADX
+Bull regime:
+- Close > EMA200
+- EMA200 current > EMA200 50 candles ago
+
+ENTRY
+Next candle OPEN after confirmed signal.
+
+EXIT
+Close after 24 x 1H candles.
+
+DISABLED
+SELL
+Stop Loss
+Take Profit
+
+COST STRESS
+Fee assumption per side: 0.055%
+Slippage assumption per side: 0.020%
+
+RESEARCH RULE
+No parameter changes are allowed while collecting this forward sample.
+Any change requires a new strategy version and a new freeze timestamp.
+
+IMPORTANT
+This script is paper/research only. It does not send exchange orders.
+Funding is not included.

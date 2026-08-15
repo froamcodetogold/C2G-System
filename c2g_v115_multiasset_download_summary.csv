@@ -1,0 +1,5 @@
+asset,symbol,file,raw,candles,first,last,coverage
+ETH,ETH/USDT:USDT,eth_data_bybit_perp_1h.csv,47516,47516,2021-03-15 00:00:00,2026-08-15 19:00:00,100.0
+SOL,SOL/USDT:USDT,sol_data_bybit_perp_1h.csv,42380,42380,2021-10-15 00:00:00,2026-08-15 19:00:00,100.0
+XRP,XRP/USDT:USDT,xrp_data_bybit_perp_1h.csv,46091,46091,2021-05-13 09:00:00,2026-08-15 19:00:00,100.0
+BNB,BNB/USDT:USDT,bnb_data_bybit_perp_1h.csv,44965,44965,2021-06-29 07:00:00,2026-08-15 19:00:00,100.0
