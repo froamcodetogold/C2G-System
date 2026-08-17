@@ -1,0 +1,2 @@
+trades,wins,losses,win_rate_pct,simple_return_pct,compounded_return_pct,ending_equity,profit_factor,expectancy_pct,median_trade_pct,max_drawdown_pct,max_loss_streak,payoff_ratio,trade_sharpe,recovery_factor,average_clock_hours,allocation_per_asset,max_concurrent_positions,maximum_nominal_exposure_pct
+71,35,36,49.29577464788733,3.768588509489444,3.3944613275444624,103.39446132754446,1.162762027553217,0.05307871140125977,-0.04167666418662304,-6.9501918876250235,5,1.1959837997690232,0.40038543204786253,0.4883982172619405,24.0,0.2,3,60.00000000000001

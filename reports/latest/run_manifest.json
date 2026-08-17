@@ -1,0 +1,135 @@
+{
+  "engine_version": "1.18.0",
+  "run_utc": "2026-08-17T19:48:10.208613+00:00",
+  "python": "3.12.13",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "config": {
+    "supertrend_length": 10,
+    "supertrend_multiplier": 3.0,
+    "adx_length": 14,
+    "adx_min": 25.0,
+    "ema_length": 200,
+    "ema_slope_lookback": 50,
+    "time_exit_bars": 24,
+    "fee_pct_per_side": 0.055,
+    "slippage_pct_per_side": 0.02,
+    "funding_pct_per_trade": 0.0,
+    "timeframe_hours": 1,
+    "strategy_version": "C2G-V1-FROZEN-BUY24H"
+  },
+  "config_hash": "8b8cf8982136e554",
+  "bootstrap_samples": 20000,
+  "btc_common_period": {
+    "start": "2020-03-25T10:00:00+00:00",
+    "end": "2026-08-15T18:00:00+00:00"
+  },
+  "asset_common_period": {
+    "start": "2021-10-15T00:00:00+00:00",
+    "end": "2026-08-15T18:00:00+00:00"
+  },
+  "funding_model": "not_included; configure funding_pct_per_trade when validated data exists",
+  "execution_model": "next candle open; close of the 24th held 1H candle",
+  "portfolio_proxy": {
+    "allocation_per_asset": 0.2,
+    "leverage": 1.0,
+    "description": "fixed equal capital slots; realized trade-level equity, not mark-to-market"
+  },
+  "limitations": [
+    "OHLC execution is deterministic and does not model order-book depth or partial fills.",
+    "Cross-venue BTC feeds are correlated observations, not independent markets.",
+    "Forward and historical samples remain small."
+  ],
+  "data": [
+    {
+      "asset": "BTC",
+      "market": "BINANCE_SPOT",
+      "path": "btc_data_binance_full_1h.csv",
+      "rows": 78727,
+      "start": "2017-08-17T04:00:00+00:00",
+      "end": "2026-08-15T18:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 28,
+      "estimated_missing_candles": 128,
+      "invalid_rows_removed": 0,
+      "source_sha256": "de8494f6d2af8811632a39195c140ba1ff27789043c107928f44dfab762ac32a"
+    },
+    {
+      "asset": "BTC",
+      "market": "BYBIT_PERPETUAL",
+      "path": "btc_data_bybit_perp_1h.csv",
+      "rows": 56025,
+      "start": "2020-03-25T10:00:00+00:00",
+      "end": "2026-08-15T18:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 0,
+      "estimated_missing_candles": 0,
+      "invalid_rows_removed": 0,
+      "source_sha256": "211c26870a46a310ce538ad18dc3808e22885ef6e0a354ae0296f161db57e12a"
+    },
+    {
+      "asset": "BTC",
+      "market": "OKX_PERPETUAL",
+      "path": "btc_data_okx_perp_1h.csv",
+      "rows": 58051,
+      "start": "2020-01-01T00:00:00+00:00",
+      "end": "2026-08-15T18:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 0,
+      "estimated_missing_candles": 0,
+      "invalid_rows_removed": 0,
+      "source_sha256": "c2c93d97f90096fd2924beac704be172e0b39c04e610ff0257b810894dadb0a5"
+    },
+    {
+      "asset": "ETH",
+      "market": "BYBIT_PERPETUAL",
+      "path": "eth_data_bybit_perp_1h.csv",
+      "rows": 47516,
+      "start": "2021-03-15T00:00:00+00:00",
+      "end": "2026-08-15T19:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 0,
+      "estimated_missing_candles": 0,
+      "invalid_rows_removed": 0,
+      "source_sha256": "f67ca9d35c885376a066d62369c4409a97c7edb763ba5984cd1ea91fd35e5329"
+    },
+    {
+      "asset": "SOL",
+      "market": "BYBIT_PERPETUAL",
+      "path": "sol_data_bybit_perp_1h.csv",
+      "rows": 42380,
+      "start": "2021-10-15T00:00:00+00:00",
+      "end": "2026-08-15T19:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 0,
+      "estimated_missing_candles": 0,
+      "invalid_rows_removed": 0,
+      "source_sha256": "48b1deada138dbeac678f07928caca215ca22e2942cac92155c4f49385cc5d43"
+    },
+    {
+      "asset": "XRP",
+      "market": "BYBIT_PERPETUAL",
+      "path": "xrp_data_bybit_perp_1h.csv",
+      "rows": 46091,
+      "start": "2021-05-13T09:00:00+00:00",
+      "end": "2026-08-15T19:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 0,
+      "estimated_missing_candles": 0,
+      "invalid_rows_removed": 0,
+      "source_sha256": "280bf7049f6ce646941aec48565535b700c90b16f277f8a5c721d5557f9c75b1"
+    },
+    {
+      "asset": "BNB",
+      "market": "BYBIT_PERPETUAL",
+      "path": "bnb_data_bybit_perp_1h.csv",
+      "rows": 44965,
+      "start": "2021-06-29T07:00:00+00:00",
+      "end": "2026-08-15T19:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 0,
+      "estimated_missing_candles": 0,
+      "invalid_rows_removed": 0,
+      "source_sha256": "a3e6581a68ab106328997bd537e2d6d169d9dc6746a20bc184a30293d3d67405"
+    }
+  ]
+}

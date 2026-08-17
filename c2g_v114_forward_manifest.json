@@ -1,0 +1,65 @@
+{
+  "engine_version": "1.18.0",
+  "profile": "v114",
+  "freeze_utc": "2026-08-15T19:00:00Z",
+  "observed_at_utc": "2026-08-17T19:48:13.310948+00:00",
+  "config": {
+    "supertrend_length": 10,
+    "supertrend_multiplier": 3.0,
+    "adx_length": 14,
+    "adx_min": 25.0,
+    "ema_length": 200,
+    "ema_slope_lookback": 50,
+    "time_exit_bars": 24,
+    "fee_pct_per_side": 0.055,
+    "slippage_pct_per_side": 0.02,
+    "funding_pct_per_trade": 0.0,
+    "timeframe_hours": 1,
+    "strategy_version": "C2G-V1-FROZEN-BUY24H"
+  },
+  "config_hash": "8b8cf8982136e554",
+  "data": [
+    {
+      "asset": "BTC",
+      "market": "BINANCE_SPOT",
+      "path": "btc_data_binance_full_1h.csv",
+      "rows": 78727,
+      "start": "2017-08-17T04:00:00+00:00",
+      "end": "2026-08-15T18:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 28,
+      "estimated_missing_candles": 128,
+      "invalid_rows_removed": 0,
+      "source_sha256": "de8494f6d2af8811632a39195c140ba1ff27789043c107928f44dfab762ac32a"
+    },
+    {
+      "asset": "BTC",
+      "market": "BYBIT_PERPETUAL",
+      "path": "btc_data_bybit_perp_1h.csv",
+      "rows": 56025,
+      "start": "2020-03-25T10:00:00+00:00",
+      "end": "2026-08-15T18:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 0,
+      "estimated_missing_candles": 0,
+      "invalid_rows_removed": 0,
+      "source_sha256": "211c26870a46a310ce538ad18dc3808e22885ef6e0a354ae0296f161db57e12a"
+    },
+    {
+      "asset": "BTC",
+      "market": "OKX_PERPETUAL",
+      "path": "btc_data_okx_perp_1h.csv",
+      "rows": 58051,
+      "start": "2020-01-01T00:00:00+00:00",
+      "end": "2026-08-15T18:00:00+00:00",
+      "duplicate_rows_removed": 0,
+      "non_hourly_gaps": 0,
+      "estimated_missing_candles": 0,
+      "invalid_rows_removed": 0,
+      "source_sha256": "c2c93d97f90096fd2924beac704be172e0b39c04e610ff0257b810894dadb0a5"
+    }
+  ],
+  "paper_only": true,
+  "live_orders": false,
+  "funding_included": false
+}
