@@ -1,1 +1,1 @@
-
+event_id,asset,market,signal_time,status,entry_time,entry_price,planned_exit_candles,exit_bar_time,exit_execution_time,exit_price,clock_hours,gross_return_pct,fees_pct,slippage_pct,funding_pct,pnl_pct,mfe_pct,mae_pct,signal_adx,config_hash,source_hash,source_last_candle,first_seen_at,last_observed_at

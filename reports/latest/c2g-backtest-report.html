@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C2G Backtest Report</title>
+<style>
+:root { color-scheme: dark; --bg:#070b14; --panel:#111827; --text:#e5e7eb; --muted:#94a3b8; --border:#263244; --green:#22c55e; --red:#ef4444; --amber:#f59e0b; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.55 Inter,Segoe UI,Arial,sans-serif; }
+main { max-width:1180px; margin:0 auto; padding:42px 24px 72px; }
+h1 { font-size:36px; margin:0 0 8px; letter-spacing:-.03em; }
+h2 { margin:38px 0 12px; font-size:21px; }
+p { color:var(--muted); margin:8px 0; }
+.eyebrow { color:var(--green); font-weight:700; letter-spacing:.12em; text-transform:uppercase; font-size:12px; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:26px 0; }
+.metric { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; }
+.metric span { display:block; color:var(--muted); font-size:12px; }
+.metric strong { display:block; margin-top:4px; font-size:23px; }
+img { width:100%; display:block; border:1px solid var(--border); border-radius:14px; background:var(--panel); margin:14px 0; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.table-wrap { overflow-x:auto; border:1px solid var(--border); border-radius:14px; }
+table { width:100%; border-collapse:collapse; background:var(--panel); }
+th,td { padding:11px 12px; text-align:right; border-bottom:1px solid var(--border); white-space:nowrap; }
+th:first-child,td:first-child { text-align:left; }
+th { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+.tag { display:inline-block; padding:3px 7px; border-radius:999px; font-size:11px; font-weight:700; }
+.tag.positive { color:var(--green); background:rgba(34,197,94,.12); }
+.tag.failed { color:var(--red); background:rgba(239,68,68,.12); }
+.warning { border-left:3px solid var(--amber); padding:11px 14px; background:rgba(245,158,11,.08); color:var(--muted); }
+code { color:var(--text); }
+@media (max-width:760px) { .metrics,.grid { grid-template-columns:1fr; } h1 { font-size:29px; } main { padding:28px 14px 52px; } }
+</style>
+</head>
+<body><main>
+<div class="eyebrow">C2G System Pro · V1.18 research report</div>
+<h1>Frozen BUY 24H backtest</h1>
+<p>Generated 2026-08-17T19:48:10.208613+00:00. The same frozen parameters were applied without asset-specific retuning.</p>
+<div class="metrics">
+  <div class="metric"><span>Positive assets after costs</span><strong>3/5</strong></div>
+  <div class="metric"><span>Strongest historical PF</span><strong>ETH · 1.953</strong></div>
+  <div class="metric"><span>Equal-slot portfolio return</span><strong>3.39%</strong></div>
+  <div class="metric"><span>Maximum nominal exposure</span><strong>60%</strong></div>
+</div>
+<img src="c2g-backtest-dashboard.png" alt="Equity, drawdown, profit factor and risk comparison dashboard">
+<h2>Common-period cross-asset result</h2>
+<div class="table-wrap"><table><thead><tr><th>Asset</th><th>Trades</th><th>Win rate</th><th>PF</th><th>Expectancy</th><th>Return</th><th>Max DD</th><th>Result</th></tr></thead><tbody><tr><td><strong>BNB</strong></td><td>12</td><td>50.00%</td><td>0.382</td><td>-0.9944%</td><td>-11.93%</td><td>-14.28%</td><td><span class="tag failed">FAILED</span></td></tr><tr><td><strong>BTC</strong></td><td>20</td><td>50.00%</td><td>1.412</td><td>0.3366%</td><td>6.73%</td><td>-7.68%</td><td><span class="tag positive">HISTORICALLY_POSITIVE</span></td></tr><tr><td><strong>ETH</strong></td><td>14</td><td>57.14%</td><td>1.953</td><td>1.2563%</td><td>17.59%</td><td>-8.32%</td><td><span class="tag positive">HISTORICALLY_POSITIVE</span></td></tr><tr><td><strong>SOL</strong></td><td>13</td><td>46.15%</td><td>1.553</td><td>0.6291%</td><td>8.18%</td><td>-13.19%</td><td><span class="tag positive">HISTORICALLY_POSITIVE</span></td></tr><tr><td><strong>XRP</strong></td><td>12</td><td>41.67%</td><td>0.963</td><td>-0.1435%</td><td>-1.72%</td><td>-22.15%</td><td><span class="tag failed">FAILED</span></td></tr></tbody></table></div>
+<h2>Uncertainty and top-winner dependency</h2>
+<p>Bootstrap probabilities use 20,000 resamples. Wide intervals are expected because each asset has only 12–20 trades.</p>
+<div class="table-wrap"><table><thead><tr><th>Asset</th><th>P(Exp &gt; 0)</th><th>Expectancy 95% CI</th><th>P(PF &gt; 1)</th><th>PF after top winner removed</th></tr></thead><tbody><tr><td><strong>BNB</strong></td><td>12.27%</td><td>-2.854% to 0.523%</td><td>12.27%</td><td>0.264</td></tr><tr><td><strong>BTC</strong></td><td>70.50%</td><td>-0.774% to 1.523%</td><td>70.50%</td><td>0.972</td></tr><tr><td><strong>ETH</strong></td><td>84.76%</td><td>-1.199% to 3.536%</td><td>84.76%</td><td>1.552</td></tr><tr><td><strong>SOL</strong></td><td>74.19%</td><td>-1.157% to 2.519%</td><td>74.19%</td><td>1.149</td></tr><tr><td><strong>XRP</strong></td><td>44.69%</td><td>-5.441% to 6.891%</td><td>44.69%</td><td>0.290</td></tr></tbody></table></div>
+<div class="grid">
+  <img src="yearly-returns.png" alt="Yearly returns heatmap">
+  <img src="trade-distribution.png" alt="Distribution of returns per trade">
+</div>
+<h2>Signal context</h2>
+<img src="btc-signal-map.png" alt="BTC Bybit price, EMA 200 and frozen buy signals">
+<h2>Data-quality audit</h2>
+<p>28 non-hourly gaps were detected across the source files. They remain visible in the audit instead of being silently filled.</p>
+<div class="table-wrap"><table><thead><tr><th>Asset</th><th>Market</th><th>Rows</th><th>Gaps</th><th>Last candle UTC</th></tr></thead><tbody><tr><td>BTC</td><td>BINANCE_SPOT</td><td>78,727</td><td>28</td><td>2026-08-15T18:00:00+00:00</td></tr><tr><td>BTC</td><td>BYBIT_PERPETUAL</td><td>56,025</td><td>0</td><td>2026-08-15T18:00:00+00:00</td></tr><tr><td>BTC</td><td>OKX_PERPETUAL</td><td>58,051</td><td>0</td><td>2026-08-15T18:00:00+00:00</td></tr><tr><td>ETH</td><td>BYBIT_PERPETUAL</td><td>47,516</td><td>0</td><td>2026-08-15T19:00:00+00:00</td></tr><tr><td>SOL</td><td>BYBIT_PERPETUAL</td><td>42,380</td><td>0</td><td>2026-08-15T19:00:00+00:00</td></tr><tr><td>XRP</td><td>BYBIT_PERPETUAL</td><td>46,091</td><td>0</td><td>2026-08-15T19:00:00+00:00</td></tr><tr><td>BNB</td><td>BYBIT_PERPETUAL</td><td>44,965</td><td>0</td><td>2026-08-15T19:00:00+00:00</td></tr></tbody></table></div>
+<h2>Methodology</h2>
+<p>BUY only: Supertrend 10/3 flip, ADX(14) &gt; 25 and rising, close above a rising EMA 200. Entry occurs at the next candle open. Exit occurs at the close of the 24th held one-hour candle.</p>
+<p>The portfolio diagnostic uses five fixed 20% capital slots with no leverage. It is a realized trade-level proxy, not a mark-to-market risk engine.</p>
+<div class="warning"><strong>Research limitation.</strong> Funding, order-book depth, latency, partial fills and exchange outages are not modeled. Historical and forward samples are small, and correlated crypto assets are not independent evidence. This report is not financial advice.</div>
+</main></body></html>

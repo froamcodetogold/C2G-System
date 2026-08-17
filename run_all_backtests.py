@@ -1,4 +1,4 @@
-"""Compatibility entrypoint for the hardened V1.17 forward-paper logger."""
+"""One-command entrypoint for the canonical C2G backtest and report suite."""
 
 import subprocess
 import sys
@@ -8,7 +8,7 @@ if __name__ == "__main__":
     root = Path(__file__).resolve().parent
     raise SystemExit(
         subprocess.call(
-            [sys.executable, str(root / "scripts" / "run_forward.py"), "--profile", "v117"],
+            [sys.executable, str(root / "scripts" / "run_backtests.py")],
             cwd=root,
         )
     )

@@ -1,1 +1,4 @@
-
+asset,market,signals_after_freeze,waiting_entry,open_trades,closed_trades,trades,wins,losses,win_rate_pct,simple_return_pct,compounded_return_pct,ending_equity,profit_factor,expectancy_pct,median_trade_pct,max_drawdown_pct,max_loss_streak,payoff_ratio,trade_sharpe,recovery_factor,average_clock_hours
+BTC,BINANCE_SPOT,0,0,0,0,0,0,0,0.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0
+BTC,BYBIT_PERPETUAL,0,0,0,0,0,0,0,0.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0
+BTC,OKX_PERPETUAL,0,0,0,0,0,0,0,0.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0

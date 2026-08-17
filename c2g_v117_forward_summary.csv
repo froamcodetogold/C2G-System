@@ -1,4 +1,4 @@
-asset,signals_after_freeze,waiting_entry,open_trades,closed_trades,gross_wr,gross_pnl,gross_exp,gross_pf,cost_pnl,cost_exp,cost_pf,median_mfe_pct,median_mae_pct
-BTC,0,0,0,0,,0.0,,,0.0,,,,
-ETH,0,0,0,0,,0.0,,,0.0,,,,
-SOL,0,0,0,0,,0.0,,,0.0,,,,
+asset,market,signals_after_freeze,waiting_entry,open_trades,closed_trades,trades,wins,losses,win_rate_pct,simple_return_pct,compounded_return_pct,ending_equity,profit_factor,expectancy_pct,median_trade_pct,max_drawdown_pct,max_loss_streak,payoff_ratio,trade_sharpe,recovery_factor,average_clock_hours
+BTC,BYBIT_PERPETUAL,0,0,0,0,0,0,0,0.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0
+ETH,BYBIT_PERPETUAL,0,0,0,0,0,0,0,0.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0
+SOL,BYBIT_PERPETUAL,0,0,0,0,0,0,0,0.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0
